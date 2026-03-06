@@ -46,10 +46,10 @@ class ContactRequestViewSet(viewsets.ModelViewSet):
             token = settings.botToken
             chat_ids = [cid.strip() for cid in settings.chatId.split(',') if cid.strip()]
             text = (
-                f"🆕 Yangi ariza!\n\n"
-                f"👤 Ism: {instance.name}\n"
-                f"📞 Tel: {instance.phone}\n"
-                f"💬 Xabar: {instance.message or 'Xabar yo\'q'}"
+                f"âœ¨â€¢ Yangi ariza!\n\n"
+                f"ðŸ‘¤ Ism: {instance.name}\n"
+                f"ðŸ“– Tel: {instance.phone}\n"
+                f"ðŸ’¬ Xabar: {instance.message or 'Xabar yoq'}"
             )
             
             for cid in chat_ids:
